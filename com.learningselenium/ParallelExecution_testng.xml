@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.learning_testNG.Learning_InvocationCount_Attribute"/>
+      <class name="com.learning_testNG.Learning_Configuration_Annotations"/>
+      <class name="com.learning_testNG.Learning_ThreadPoolSize_annotation_Parallel_execution"/>
+      <class name="com.learning_testNG.Priority_Annotation"/>
+      <class name="com.test_scripts.DemoWebShop_Multi_Window_SS"/>
+      <class name="com.learning_testNG.First_TestNG_Class"/>
+      <class name="com.learning_testNG.LearningEnabledAttribute"/>
+      <class name="com.test_scripts.Cart_Test"/>
+      <class name="com.test_scripts.AddToCart_Test"/>
+      <class name="com.test_scripts.AddToCart_With_Configuration"/>
+      <class name="com.learning_testNG.Learning_DependsOnMethods"/>
+      <class name="com.test_scripts.Address_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
