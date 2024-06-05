@@ -16,5 +16,10 @@ public class WebDriver_utility {
 		File dest = new File("./screenshots/ScreenshotOf"+fileName+".png");
 		FileHandler.copy(src, dest);
 	}
+	public static String getBase64ScreenShot(WebDriver driver) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		String ss = ts.getScreenshotAs(OutputType.BASE64);
+		return ss;
+	}
 
 }

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-02T14:32:04 IST" name="Default suite" finished-at="2024-06-02T14:32:29 IST" duration-ms="24552">
+  <suite started-at="2024-06-05T16:19:25 IST" name="Default suite" finished-at="2024-06-05T16:19:49 IST" duration-ms="23975">
     <groups>
     </groups>
-    <test started-at="2024-06-02T14:32:04 IST" name="Default test" finished-at="2024-06-02T14:32:29 IST" duration-ms="24552">
-      <class name="com.learning_testNG.Learning_Hard_Assert">
-        <test-method signature="loginHardAssert()[pri:0, instance:com.learning_testNG.Learning_Hard_Assert@14dd9eb7]" started-at="2024-06-02T14:32:04 IST" name="loginHardAssert" finished-at="2024-06-02T14:32:29 IST" duration-ms="24466" status="PASS">
+    <test started-at="2024-06-05T16:19:25 IST" name="Default test" finished-at="2024-06-05T16:19:49 IST" duration-ms="23975">
+      <class name="com.learning_testNG.Learning_POM_Classes">
+        <test-method signature="searchTest()[pri:0, instance:com.learning_testNG.Learning_POM_Classes@14dd9eb7]" started-at="2024-06-05T16:19:25 IST" name="searchTest" finished-at="2024-06-05T16:19:49 IST" duration-ms="23892" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginHardAssert -->
-      </class> <!-- com.learning_testNG.Learning_Hard_Assert -->
+        </test-method> <!-- searchTest -->
+      </class> <!-- com.learning_testNG.Learning_POM_Classes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

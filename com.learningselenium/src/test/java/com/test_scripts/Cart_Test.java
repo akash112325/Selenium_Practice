@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.generic_utilities.WebDriver_utility;
+import com.aventstack.extentreports.Status;
 import com.generic_utilities.Base_test;
 
 public class Cart_Test extends Base_test{
@@ -17,7 +18,9 @@ public class Cart_Test extends Base_test{
 		Actions action = new Actions(driver);
 		action.scrollToElement(addToCart).perform();
 		addToCart.click();
+		test.log(Status.INFO, "product added to cart sussesfully");
 		driver.findElement(By.partialLinkText("Shopping")).click();
+		test.addScreenCaptureFromBase64String(WebDriver_utility.getBase64ScreenShot(driver));
 		WebDriver_utility.takeScreenShotOfWebpage(driver, "ProductAdded");
 		
 	}
@@ -26,7 +29,9 @@ public class Cart_Test extends Base_test{
 	public void deleteFromCart() throws IOException {
 		driver.findElement(By.partialLinkText("Shopping")).click();
 		driver.findElement(By.xpath("(//a[text()='14.1-inch Laptop'])[2]/../..//input[@name='removefromcart']")).click();
+		test.log(Status.INFO, "Product deleted sussesfully");
 		driver.findElement(By.xpath("//input[@value='Update shopping cart']")).click();
+		test.addScreenCaptureFromBase64String(WebDriver_utility.getBase64ScreenShot(driver));
 		WebDriver_utility.takeScreenShotOfWebpage(driver, "ProductDeleted");
 		
 	}

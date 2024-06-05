@@ -3,6 +3,8 @@ package com.learning_testNG;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,6 +35,10 @@ public class Report_Generation_ExtentReport {
 		driver.findElement(By.id("Password")).sendKeys("rrrrrr");
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
 		test.log(Status.INFO, "loggen in");
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		String screenshot = ts.getScreenshotAs(OutputType.BASE64);
+		//to add screenshot in report
+		test.addScreenCaptureFromBase64String(screenshot);
 		
 		driver.quit();
 		

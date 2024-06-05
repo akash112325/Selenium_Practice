@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learning_testNG.Report_Generation_ExtentReport">
+      <class name="com.learning_testNG.Learning_Listener">
         <methods>
-          <include name="loginTest"/>
+          <include name="launchBrowser"/>
+          <include name="searchTest"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="configureReport"/>
+          <include name="loginToDWS"/>
+          <include name="closeReport"/>
         </methods>
-      </class> <!-- com.learning_testNG.Report_Generation_ExtentReport -->
+      </class> <!-- com.learning_testNG.Learning_Listener -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
