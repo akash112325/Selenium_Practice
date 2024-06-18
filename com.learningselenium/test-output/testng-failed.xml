@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learning_testNG.Learning_Listener">
+      <class name="practice_zero_to_hero.PracticeZeroToHero">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="searchTest"/>
-          <include name="logout"/>
-          <include name="closeBrowser"/>
-          <include name="configureReport"/>
-          <include name="loginToDWS"/>
-          <include name="closeReport"/>
+          <include name="iframe"/>
         </methods>
-      </class> <!-- com.learning_testNG.Learning_Listener -->
+      </class> <!-- practice_zero_to_hero.PracticeZeroToHero -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,10 +3,12 @@ package com.learning_testNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.generic_utilities.Base_test;
-
+import com.generic_utilities.Listener_Implementation;
+@Listeners(Listener_Implementation.class)
 public class Learning_Listener extends Base_test{
 	@Test
 	public void searchTest() throws InterruptedException {
